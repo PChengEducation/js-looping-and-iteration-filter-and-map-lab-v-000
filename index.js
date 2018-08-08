@@ -18,7 +18,7 @@ function driverNamesWithRevenueOver(array, string){
   return bigEarners;
 }
 
-function exactMatch(drivers, object){
+function exactMatch(drivers, name){
   const key = Object.keys(name);
   const pairs = [];
   drivers.filter(function (driver){
