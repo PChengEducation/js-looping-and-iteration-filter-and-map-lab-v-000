@@ -18,13 +18,23 @@ function driverNamesWithRevenueOver(array, string){
   return bigEarners;
 }
 
-function exactMatch(drivers, name){
-  const key = Object.keys(name);
-  const pairs = [];
-  drivers.filter(function (driver){
-    if (driver[key[0]] === name[key[0]]){
-      pairs.push(driver.name);
+function exactMatch(drivers, object){
+  const key = Object.keys(object);
+  const equalMatch = drivers.filter(function(driver){
+    if (driver[key[0]] === object[key[0]]){
+      return driver;
     }
   });
-  return pairs;
+  return equalMatch;
 }
+
+// function exactMatch(drivers, name){
+//   const key = Object.keys(name);
+//   const pairs = [];
+//   drivers.filter(function (driver){
+//     if (driver[key[0]] === name[key[0]]){
+//       pairs.push(driver.name);
+//     }
+//   });
+//   return pairs;
+// }
