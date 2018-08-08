@@ -28,13 +28,13 @@ function exactMatch(drivers, object){
   return equalMatch;
 }
 
-// function exactMatch(drivers, name){
-//   const key = Object.keys(name);
-//   const pairs = [];
-//   drivers.filter(function (driver){
-//     if (driver[key[0]] === name[key[0]]){
-//       pairs.push(driver.name);
-//     }
-//   });
-//   return pairs;
-// }
+function exactMatchToList(drivers, name){
+  const key = Object.keys(name);
+  const pairs = [];
+  drivers.filter(function (driver){
+    if (driver[key[0]] === name[key[0]]){
+      pairs.push(driver.name);
+    }
+  });
+  return pairs;
+}
