@@ -9,7 +9,7 @@ function driversWithRevenueOver(array, string){
 }
 
 function driverNamesWithRevenueOver(array, string){
-  const BigEarners = [];
+  const bigEarners = [];
   array.filter(function(driver){
     if (driver.revenue > string){
       bigEarners.push(driver["name"]);
