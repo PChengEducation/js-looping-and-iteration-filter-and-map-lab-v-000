@@ -7,3 +7,13 @@ function driversWithRevenueOver(array, string){
   });
   return bigEarners;
 }
+
+function driverNamesWithRevenueOver(array, string){
+  const BigEarners = [];
+  array.filter(function(driver){
+    if (driver.revenue > string){
+      bigEarners.push(driver["name"]);
+    };
+  });
+  return bigEarners;
+}
